@@ -3,10 +3,41 @@ body {
     font-family: "Microsoft YaHei", sans-serif;
 }
 
+/* 导航栏 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 头部 Banner */
+header {
+    background: linear-gradient(135deg, #007bff, #0047ab);
+    padding: 100px 0;
+}
+
+/* 卡片样式 */
 .card {
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 服务优势图标 */
+.feature-icon {
+    font-size: 3rem;
+}
+
+/* 表单样式 */
+#contact {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* 页脚 */
+footer {
+    margin-top: 60px;
 }
