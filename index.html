@@ -4,9 +4,9 @@
     <!-- 基础 SEO 配置 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>套餐服务 | 您的公司名称</title>
-    <meta name="description" content="专业提供XX套餐服务，价格优惠，立即咨询">
-    <meta name="keywords" content="套餐,服务,价格,优惠">
+    <title>宽带办理 | 快速办理宽带套餐 - 您的公司名称</title>
+    <meta name="description" content="专业提供高速宽带办理服务，多种套餐可选，立即申请享受优惠">
+    <meta name="keywords" content="宽带办理,宽带套餐,高速宽带,网络服务">
     <meta name="robots" content="index,follow">
     <meta name="baidu-site-verification" content="your-verification-code">
 
@@ -16,56 +16,159 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container my-5">
-        <h1 class="text-center mb-4">精选套餐</h1>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">宽带办理服务</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#packages">套餐介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">服务优势</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">立即办理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <!-- 套餐展示 -->
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>基础套餐</h3>
-                        <p class="text-muted">¥1999/月</p>
-                        <ul>
-                            <li>包含基础功能A</li>
-                            <li>7x5技术支持</li>
-                            <li>10GB存储空间</li>
-                        </ul>
+    <!-- 头部 Banner -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">快速办理高速宽带</h1>
+            <p class="lead">多种套餐可选，立即申请享受专属优惠</p>
+            <a href="#contact" class="btn btn-light btn-lg">立即办理</a>
+        </div>
+    </header>
+
+    <!-- 套餐介绍 -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">宽带套餐</h2>
+            <div class="row">
+                <!-- 套餐 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">基础套餐</h3>
+                            <p class="text-muted">¥99/月</p>
+                            <ul class="list-unstyled">
+                                <li>100Mbps 带宽</li>
+                                <li>免费安装</li>
+                                <li>7x24 小时技术支持</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="selectPackage('基础套餐')">选择套餐</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 套餐 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">高级套餐</h3>
+                            <p class="text-muted">¥199/月</p>
+                            <ul class="list-unstyled">
+                                <li>300Mbps 带宽</li>
+                                <li>免费安装 + 路由器</li>
+                                <li>优先技术支持</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="selectPackage('高级套餐')">选择套餐</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 套餐 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">尊享套餐</h3>
+                            <p class="text-muted">¥299/月</p>
+                            <ul class="list-unstyled">
+                                <li>1000Mbps 带宽</li>
+                                <li>免费安装 + 高端路由器</li>
+                                <li>专属客户经理</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="selectPackage('尊享套餐')">选择套餐</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- 更多套餐... -->
         </div>
+    </section>
 
-        <!-- 联系表单 -->
-        <form id="myForm" action="https://formspree.io/f/your-form-id" method="POST">
-            <div class="mb-3">
-                <label class="form-label">姓名</label>
-                <input type="text" name="name" class="form-control" required>
+    <!-- 服务优势 -->
+    <section id="features" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">我们的优势</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon mb-3">🚀</div>
+                    <h4>极速网络</h4>
+                    <p>提供高速稳定的网络连接，满足您的各种需求。</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon mb-3">📞</div>
+                    <h4>全天候支持</h4>
+                    <p>7x24 小时专业客服，随时解决您的问题。</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon mb-3">💡</div>
+                    <h4>灵活套餐</h4>
+                    <p>多种套餐可选，满足不同用户需求。</p>
+                </div>
             </div>
-            <div class="mb-3">
-                <label class="form-label">电话</label>
-                <input type="tel" name="phone" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">感兴趣套餐</label>
-                <select name="package" class="form-select">
-                    <option value="基础套餐">基础套餐</option>
-                    <option value="高级套餐">高级套餐</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">提交咨询</button>
-        </form>
-    </div>
+        </div>
+    </section>
 
-    <!-- 百度自动推送代码 -->
-    <script>
-    (function(){
-        var bp = document.createElement('script');
-        bp.src = '//push.zhanzhang.baidu.com/push.js';
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-    </script>
+    <!-- 联系表单 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">立即办理</h2>
+            <form id="broadbandForm" class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">姓名</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">电话</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="col-12">
+                    <label for="address" class="form-label">安装地址</label>
+                    <input type="text" class="form-control" id="address" required>
+                </div>
+                <div class="col-12">
+                    <label for="package" class="form-label">选择套餐</label>
+                    <select class="form-select" id="package" required>
+                        <option value="">请选择套餐</option>
+                        <option value="基础套餐">基础套餐</option>
+                        <option value="高级套餐">高级套餐</option>
+                        <option value="尊享套餐">尊享套餐</option>
+                    </select>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">提交申请</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2023 宽带办理服务. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定义 JS -->
+    <script src="scripts.js"></script>
 </body>
 </html>
